@@ -1,19 +1,26 @@
 #container{
   margin: auto;
   background-color: grey;
-  width = 50%;
-
-}
-
-.row{
   display: inline-block;
-  text-align: center;
+  column-count: 16;
+
+
 }
+
 
 .gridsquare{
   background-color: white;
   padding: 20px;
   display: inline-block;
+  min-width: 20px;
 
 
+}
+
+.gridsquare:hover{
+  background-color: black;
+}
+
+.gridsquare:active{
+  background-color: black;
 }
