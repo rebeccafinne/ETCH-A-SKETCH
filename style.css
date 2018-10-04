@@ -11,6 +11,7 @@ header{
 footer{
   margin: 10px;
   text-align: center;
+  font-style: italic;
 }
 #buttonContainer{
   display: flex;
@@ -26,6 +27,7 @@ footer{
   height: 550px;
   max-width: 100%;
   max-height: 100%;
+  box-shadow: 5px 5px grey;
 
 }
 
@@ -60,4 +62,8 @@ button{
   text-align: center;
   padding: 10px;
   display: inline;
+  font-style: italic;
+  font-size: 16px;
+  box-shadow: 5px 5px grey;
+  background-color: #857070
 }
