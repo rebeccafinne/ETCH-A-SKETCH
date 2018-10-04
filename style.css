@@ -16,7 +16,19 @@ footer{
 #buttonContainer{
   display: flex;
   justify-content: center;
-  margin: 15px;
+  margin: 15px 0;
+}
+
+#outerBoarder{
+  border-radius: 10px;
+  background-color: #A89999;
+  width: 600px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 2px 2px grey;
+
 }
 
 
@@ -27,7 +39,7 @@ footer{
   height: 550px;
   max-width: 100%;
   max-height: 100%;
-  box-shadow: 5px 5px grey;
+
 
 }
 
@@ -57,13 +69,16 @@ footer{
 
 }
 
-button{
-  margin: auto;
+input{
+  margin: 10px;
   text-align: center;
   padding: 10px;
-  display: inline;
+  display: block;
   font-style: italic;
   font-size: 16px;
-  box-shadow: 5px 5px grey;
-  background-color: #857070
+  box-shadow: 2px 2px grey;
+  background-color: #857070;
+  border: none;
+  border-radius: 10px;
+
 }

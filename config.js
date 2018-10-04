@@ -1,4 +1,5 @@
 let maxAmount = 16;
+let isRainbow = false;
 
 function genGrid(maxAmount){
   let grid = document.getElementById("container");
@@ -33,8 +34,30 @@ function removeGrid(){
   $('.gridsquare').remove();
 };
 
+function rainbowMode(){
+  let button = document.getElementById("rainbow");
+  if(isRainbow == false){
+    button.value = "Rainbow Mode On"
+    isRainbow = true;
+    genGrid(maxAmount);
+  }else{
+    button.value = "Rainbow Mode Off"
+    isRainbow = false;
+
+  }
+
+};
+
 function myScript(){
-  $(this).css("background-color", "black");
+  if(isRainbow == false){
+    $(this).css("background-color", "black");
+  }else{
+    let r = Math.round(255 * Math.random());
+		let g = Math.round(255 * Math.random());
+		let b = Math.round(255 * Math.random());
+		let color = `rgb(${r}, ${g}, ${b})`;
+    $(this).css("background-color", color);
+  }
 };
 
 $(document).ready(function() {
